@@ -29,8 +29,8 @@ SECRET_KEY = 'j%#rhh02k)sycnr4n4@(ku2db#)!^qy_z)yua)6eup@!0hov-p'
 DJANGO_SECRET_KEY = SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-# DEBUG = False
+# DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'demo-numplate.herokuapp.com']
 

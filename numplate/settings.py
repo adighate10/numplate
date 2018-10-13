@@ -52,6 +52,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',
+
+    #third party
+
+    #own
+    'pages',
+    'product',
 ]
 
 MIDDLEWARE = [

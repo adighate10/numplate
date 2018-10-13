@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'numplate.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES[‘default’].update(db_from_env)
+DATABASES['default'].update(db_from_env)
 
 # DATABASES = {
 #     'default': {

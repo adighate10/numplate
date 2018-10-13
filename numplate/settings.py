@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 # DEBUG = True
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'demo-numplate.herokuapp.com']
 
 #whitnoise staticfile 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'

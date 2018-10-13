@@ -1,3 +1,4 @@
+import dj_database_url 
 """
 Django settings for numplate project.
 
@@ -11,7 +12,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-import dj-database-url 
+
 
 db_from_env = dj_database_url.config()
 

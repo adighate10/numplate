@@ -10,7 +10,6 @@ from django.db.models.signals import pre_delete
 #     cloudinary.uploader.destroy(instance.image.public_id)
 
 class Photo(models.Model):
-    image = CloudinaryField('image')
-    caption = models.CharField(max_length=100, blank=True)
-    def __str__(self):
-        return self.caption if self.caption != "" else "No caption"
+    name = models.CharField(max_length=100, blank=True)
+    image = models.ImageField(upload_to='images/', blank=True)
+    

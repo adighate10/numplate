@@ -16,10 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from pages.views import home_view
-from product.views import add_photo
+from product.views import add_photo, show_photo
 
 urlpatterns = [
 	path('', home_view, name='home'),
-	path('addphoto/', add_photo, name='add photo'),
+	path('photos/addphoto/', add_photo, name='addPhoto'),
+	path('photos/show/<id>', show_photo, name='showPhoto'),
     path('admin/', admin.site.urls),
 ]

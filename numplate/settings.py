@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+import cloudinary
 
 
 
@@ -53,7 +54,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',
 
+
     #third party
+    'cloudinary_storage',
+    'cloudinary',
 
     #own
     'pages',
@@ -125,6 +129,17 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# cloudinary.config( 
+#   cloud_name = "dqxasc2wh", 
+#   api_key = "314257629575118", 
+#   api_secret = "1cnroX4oGc8T8sg2h7sM7R7ZriU" 
+# )
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dqxasc2wh',
+    'API_KEY': '314257629575118',
+    'API_SECRET': '1cnroX4oGc8T8sg2h7sM7R7ZriU'
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
@@ -147,3 +162,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+MEDIA_URL = '/media/'  # or any prefix you choose
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'

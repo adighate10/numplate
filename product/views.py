@@ -15,7 +15,7 @@ def add_photo(request):
             return render(request, 'show-photo.html', {'photo_instance': photo_instance})
     else:
         form = PhotoForm()
-    return render(request, 'add-photo.html', {'form': form})
+    return render(request, 'index.html', {'form': form})
 
 def show_photo(request):
     photo = Photo.objects.get(id=id)

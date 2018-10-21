@@ -37,7 +37,7 @@ else:
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'demo-numplate.herokuapp.com']
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', '192.168.1.28', 'demo-numplate.herokuapp.com']
 
 #whitnoise staticfile 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
